@@ -3,7 +3,7 @@ var metaData = (function () {
     "use strict";
     var m_documentTypesList;
     var m_documentType;
-    var API_URL = 'https://frontrolapp.azurewebsites.net/api/';
+    var API_URL = 'https://dashboard.frontrol.com/api/';
     var arrayEventHandler = ['documentName'];
     var jsonMetaData = ["_DBMETADATA", "_JOIMETADATA", "_QUERY", "_AUTHORIZATION", "_CUSTOMIZATION"];
     var testingJsonMetadata = ["_TESTDATA_CREATE"];
@@ -86,7 +86,7 @@ var metaData = (function () {
     }
     function login(userName, password, callback) {
         if (userName && password) {
-            fetch(`https://frontrolapp.azurewebsites.net/api/users/login`, {
+            fetch(`https://dashboard.frontrol.com/api/users/login`, {
                 method: 'post',
                 headers: {
                     "Content-type": "application/x-www-form-urlencoded; charset=UTF-8"
